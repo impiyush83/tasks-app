@@ -1,0 +1,13 @@
+<%= title %>
+
+<form method="post" action='/tasks'>
+    <label> Add task </label>
+    <input type="text" name="task" placeholder="Add task">
+    <input type="submit"  value="Submit">
+</form>
+
+<ul>
+<% tasks.forEach(function(task){ %>
+    <li><%= task %></li>
+<% }) %> 
+</ul>
